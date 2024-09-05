@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+	"testing"
 	"time"
 )
 
-func main() {
+func TestTime(t *testing.T) {
 	var now time.Time = time.Now()
 	fmt.Println(now)
 
@@ -27,4 +28,7 @@ func main() {
 	fmt.Println(valueTime.Month())
 	fmt.Println(valueTime.Day())
 	fmt.Println(valueTime.Hour())
+
+	//
+	fmt.Println("Time Unix", time.Now().UnixNano())
 }

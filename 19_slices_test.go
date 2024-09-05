@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
+	"testing"
 
 	"golang.org/x/exp/slices"
 )
 
-func main() {
+func TestSlices(t *testing.T) {
 	names := []string{"Ricid", "kumbara"}
 	values := []int{100, 80}
 

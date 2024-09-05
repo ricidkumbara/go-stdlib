@@ -3,9 +3,10 @@ package main
 import (
 	"fmt"
 	"strconv"
+	"testing"
 )
 
-func main() {
+func TestStrconv(t *testing.T) {
 	result, err := strconv.ParseBool("true")
 	if err != nil {
 		fmt.Println(err)

@@ -5,9 +5,10 @@ import (
 	"fmt"
 	"io"
 	"strings"
+	"testing"
 )
 
-func main() {
+func TestCSVReader(t *testing.T) {
 	csvString := "Ricid,Kumbara\n" +
 		"Fulan1,Fulan11\n" +
 		"Fulan2,Fulan22\n"

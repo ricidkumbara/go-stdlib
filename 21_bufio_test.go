@@ -6,9 +6,10 @@ import (
 	"io"
 	"os"
 	"strings"
+	"testing"
 )
 
-func main() {
+func TestBufio(t *testing.T) {
 	input := strings.NewReader("this is long\ntext paragraf\n")
 	reader := bufio.NewReader(input)
 

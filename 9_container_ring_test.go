@@ -4,9 +4,10 @@ import (
 	"container/ring"
 	"fmt"
 	"strconv"
+	"testing"
 )
 
-func main() {
+func TestContainerRing(t *testing.T) {
 	data := ring.New(5)
 	for i := 0; i < data.Len(); i++ {
 		data.Value = "Value " + strconv.Itoa(i)

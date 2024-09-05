@@ -3,9 +3,10 @@ package main
 import (
 	"container/list"
 	"fmt"
+	"testing"
 )
 
-func main() {
+func TestContainerList(t *testing.T) {
 	data := list.New()
 	data.PushBack("Ricid")
 	data.PushBack("Kumbara")

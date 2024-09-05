@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"sort"
+	"testing"
 )
 
 type User struct {
@@ -24,7 +25,7 @@ func (s UserSlice) Swap(i, j int) {
 	s[i], s[j] = s[j], s[i]
 }
 
-func main() {
+func TestSort(t *testing.T) {
 	users := []User{
 		{"Ricid", 25},
 		{"Kumbara", 26},

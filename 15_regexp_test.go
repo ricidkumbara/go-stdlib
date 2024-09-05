@@ -3,9 +3,10 @@ package main
 import (
 	"fmt"
 	"regexp"
+	"testing"
 )
 
-func main() {
+func TestRegExp(t *testing.T) {
 	var regex *regexp.Regexp = regexp.MustCompile(`e([a-z])o`)
 
 	fmt.Println(regex.MatchString("eko"))

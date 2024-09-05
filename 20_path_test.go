@@ -4,9 +4,10 @@ import (
 	"fmt"
 	"path"
 	"path/filepath"
+	"testing"
 )
 
-func main() {
+func TestPath(t *testing.T) {
 	fmt.Println(path.Dir("hello/world.go"))
 	fmt.Println(path.Base("hello/world.go"))
 	fmt.Println(path.Ext("hello/world.go"))

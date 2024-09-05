@@ -3,9 +3,10 @@ package main
 import (
 	"fmt"
 	"math"
+	"testing"
 )
 
-func main() {
+func TestMath(t *testing.T) {
 	fmt.Println(math.Ceil(1.40))
 	fmt.Println(math.Floor(1.60))
 	fmt.Println(math.Round(1.60))

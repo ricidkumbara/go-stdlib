@@ -3,9 +3,10 @@ package main
 import (
 	"encoding/base64"
 	"fmt"
+	"testing"
 )
 
-func main() {
+func TestBase64Encode(t *testing.T) {
 	var encoded []byte = []byte("Ricid Kumbara")
 	var encodedString string = base64.StdEncoding.EncodeToString(encoded)
 

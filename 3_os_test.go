@@ -3,9 +3,10 @@ package main
 import (
 	"fmt"
 	"os"
+	"testing"
 )
 
-func main() {
+func TestOs(t *testing.T) {
 	args := os.Args
 
 	for _, arg := range args {

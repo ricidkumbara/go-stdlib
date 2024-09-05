@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"reflect"
+	"testing"
 )
 
 type Sample struct {
@@ -46,7 +47,7 @@ func isValid(value any) (result bool) {
 	return result
 }
 
-func main() {
+func TestReflect(t *testing.T) {
 	readField(Sample{"Ricid"})
 	readField(Person{"Ricid", "", ""})
 

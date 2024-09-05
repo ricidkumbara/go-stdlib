@@ -3,9 +3,10 @@ package main
 import (
 	"encoding/csv"
 	"os"
+	"testing"
 )
 
-func main() {
+func TestCSVWriter(t *testing.T) {
 	writter := csv.NewWriter(os.Stdout)
 
 	_ = writter.Write([]string{"Ricid", "Kumbara"})

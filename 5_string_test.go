@@ -3,9 +3,10 @@ package main
 import (
 	"fmt"
 	"strings"
+	"testing"
 )
 
-func main() {
+func TestStrings(t *testing.T) {
 	fmt.Println(strings.Contains("Ricid Kumbara", "Ricid"))
 	fmt.Println(strings.Split("Ricid Kumbara", " "))
 	fmt.Println(strings.ToLower("Ricid Kumbara"))
